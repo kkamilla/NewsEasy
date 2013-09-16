@@ -1,0 +1,258 @@
+
+<!DOCTYPE html ><!--PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+
+<!-- ROUTE INFO: {'action': 'index', 'controller': <class 'ui.controllers.HomePageController'>, 'name': 'home'} -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="NEWSeasy is the fastest way to find, track and vote on your favorite websites and blogs in real-time.  Get the latest news on all your interests and trending topics exactly the way you want it, with the new NEWSeasy Reader!  Now, with NEWSeasy Local, find and vote on hyper-local content from top blogs and websites in all of your favorite cities."/>
+    <meta name="keywords" content="top blogs,vote,favorite,local,blogs,events,cities,voting" />
+    <meta property="fb:app_id" content="192780167407781">
+
+    <title>NEWSeasy</title>
+    <link media="all" rel="stylesheet" type="text/css" href="/static/css/all.css" />
+    <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/static/css/ie.css" media="screen"/><![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+    <link media="all" rel="stylesheet" type="text/css" href="/static/css/style.css" />
+
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.4&sensor=false"></script>
+
+    <script type="text/javascript">
+        var map;
+
+        function initialize() {
+            var latlng = new google.maps.LatLng(37.020098, -95.625);
+            var myOptions = {
+                scrollwheel: false,
+                mapTypeControl: false,
+                draggable: false,
+                keyboardShortcuts: false,
+                zoomControl: false,
+
+                zoom: 4
+                ,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                streetViewControl: false
+            };
+            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+
+        }
+
+    </script>
+</head>
+<body id="homepage" onload="initialize()
+">
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+    var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+
+<div class="container_12
+ wrapper">
+    <div class="grid_12
+">
+        <!-- header -->
+        <div id="header">
+             <strong class="logo">   <img src="assets/rails.jpg" width="506" height="120" alt="NEWSeasy">
+                 <p style="float:right; width:90px;"><h1 class="home">Welcome to the all new NEWSeasy, the best resource for news from around the world.</h1>
+                 <h2>NEWSeasy Reader</h2>
+                 <div class="grid_6 omega">
+                     NEWSeasy is the fastest way to find and track your favorite news channels and write blogs in real-time.
+                         Easily customize your dashboard with multiple view options.Get the latest news on all your interests and trending topics exactly the
+                         way you want it!</p>
+                     <p><a href="sign_up" class="buttonPrimary">Create an Account</a> </p>
+                     <p>Already have an account?<a href="log_in" class="buttonPrimary">Sign in</a> </p>
+                 </div>
+            </strong>
+            <h2 class="area1" style="display: none"></h2>
+        </div>
+
+    </div>
+    <div class="grid_5 omega aside">
+
+
+        <h3>Top News Sites</h3>
+
+        <div class="grid_1 alpha article-box">
+
+            <div class="grid_4 omega">
+                <h3 class="article-title"><a href="/layouts/newsfeeds">BBC News</a></h3>
+
+            </div>
+            <!--<div class="article-end">&nbsp;</div>
+
+            <div class="grid_1 alpha article-box">
+                <div class="article-ear">&nbsp;</div>
+                <p>LA</p>
+            </div>
+            <div class="grid_4 omega">
+                <h3 class="article-title"><a href="/city/CA/Los-Angeles">Los Angeles</a></h3>
+                <p class="article-summary">Celebrities and surfers aren't the only hot topics in Southern California's iconic city of Los Angeles. In tabloid town people are always talkin'! Get informed with top LA blogs L.A. Unleashed, 24 Frames, and Chatter.
+                </p>
+                <p class="article-source"><a href="#"></a></p>
+            </div>
+            <div class="article-end">&nbsp;</div>
+
+            <div class="grid_1 alpha article-box">
+                <div class="article-ear">&nbsp;</div>
+                <p>CHI</p>
+            </div>
+            <div class="grid_4 omega">
+                <h3 class="article-title"><a href="/city/IL/Chicago">Chicago</a></h3>
+                <p class="article-summary">The Windy City isn't just home to Wrigleyville, and a mile of miraculous shopping. In between bites of world famous deep-dish you can now digest the details of all that's happening in Chi-Town with these top Chicago blogs: Globetrotting, Cityscapes, Change of Subject</p>
+                <p class="article-source"><a href="#"></a></p>
+            </div>
+            <div class="article-end">&nbsp;</div>
+
+            <div class="grid_1 alpha article-box">
+                <div class="article-ear">&nbsp;</div>
+                <p>SF</p>
+            </div>
+            <div class="grid_4 omega">
+                <h3 class="article-title"><a href="/city/CA/San-Francisco">San Francisco</a></h3>
+                <p class="article-summary">It's more than just home to baseball's World Champion San Francisco Giants, this friendly city is packed with artists, events, foodies, eclectics neighborhoods and some killer blogs! Get the insider scoop from top blogs SF Gate, SFList, and EaterSF!</p>
+                <p class="article-source"><a href="#"></a></p>
+            </div>
+            <div class="article-end">&nbsp;</div>   -->
+
+            <div class="grid_1 alpha article-box">
+
+                <div class="grid_4 omega">
+                    <h3 class="article-title"><a href="layouts/newsfeeds">CNN IBN</a></h3>
+
+                </div>
+    <div class="clear">&nbsp;</div>
+    <!-- main -->
+    <div class="grid_12
+" id="main">
+        <div class="grid_7
+ alpha">
+            <!-- content -->
+            <div id="content">
+                <!-- breadcrumbs -->
+                <ul class="breadcrumbs">
+
+                </ul>
+
+                <!--<div class="grid_1 alpha">
+                    <img src="assets/img1.jpg" alt="Newspaper" width="158" height="353" />
+                </div>   -->
+
+                <hr class="home"/>
+
+               <img src="/assets/img2.jpg" width="417" height="242" alt="NEWSeasy Local Beta" style="margin-bottom:10px;" />
+               <p style="float:right; width:1090px;">Bringing you local content from top websites in all of your nearby cities </p>
+                <div class="article-sub-header">
+                    <p>
+                    <div class="ear">&nbsp;</div>
+                </div>
+                <div class="clear" style="margin-bottom:20px;"></div>
+                <div class="grid_3 alpha">
+                   <!-- <ul>
+                        <li><a href="/city/NY/New-York">New York, NY<a/></li>
+                        <li><a href="/city/CA/Los-Angeles">Los Angeles, CA</a></li>
+                        <li><a href="/city/IL/Chicago">Chicago, IL</a></li>
+                        <li><a href="/city/GA/Atlanta">Atlanta, GA</a></li>
+                        <li><a href="/city/TX/Houston">Houston, TX</a></li>
+                        <li><a href="/city/TX/Dallas">Dallas, TX</a></li>
+                        <li><a href="/city/MN/Minneapolis">Minneapolis, MN</a></li>
+                        <li><a href="/city/DC/Washington">Washington D.C.</a></li>
+                    </ul>   -->
+                </div>
+                <div class="grid_4 omega">
+                   <!-- <ul>
+                        <li><a href="/city/CA/San-Francisco">San Francisco, CA</a></li>
+                        <li><a href="/city/CO/Denver">Denver, CO</a></li>
+                        <li><a href="/city/AZ/Phoenix">Phoenix, AZ</a></li>
+                        <li><a href="/city/PA/Philadelphia">Philadelphia, PA</a></li>
+                        <li><a href="/city/WA/Seattle">Seattle, WA</a></li>
+                        <li><a href="/city/FL/Miami">Miami, FL</a></li>
+                        <li><a href="/city/OR/Portland">Portland, OR</a></li>
+                        <li><a href="/top">More Cities...</a></li>
+                    </ul>  -->
+                </div>
+
+                <hr class="home"/>
+
+
+            </div>
+        </div>
+        <!-- aside -->
+
+
+
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>
+</div>
+<!-- footer -->
+<div id="footer">
+    <div class="options">
+        <div class="container_12
+">
+            <!--<div class="grid_2 alpha">
+                <a href="/" title="NEWSeasy"><img src="assets/img4.jpg" title="NEWSeasy" width="138" height="135" /></a>
+            </div>-->
+            <div class="grid_10 omega">
+                <p>
+                <div class="footerlinks1">
+                    <a href="/">Home</a>
+                    <a href="/about/index.html">About</a>
+                    <a href="/help/faq/index.html">Help</a>
+                    <a href="/help/languages/index.html">Blog</a>
+
+
+                    <a href="/contact/index.html">Contact Us</a><br />
+
+                </div>
+                <div class="footerlinks2">
+
+                </div>
+                <div class="footerlinks3">
+
+                </div>
+
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<!-- map -->
+<div class="map" id="map_canvas"></div>
+
+
+<div class="stripe" id="stripe_canvas"></div>
+
+<script type="text/javascript">
+    var _gaq = [['_setAccount', 'UA-132214-19'], ['_trackPageview']];
+    (function(d, t) {
+        var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+        g.async = true;
+        g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s);
+    })(document, 'script');
+</script>
+
+<script language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript"><!--
+var s_code=s.t();if(s_code)document.write(s_code)
+//--></script>
+<script>
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "6034742", c4: "http://www.NEWSeasy.com/" });
+    (function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el); })();
+</script>
+<noscript> <img src="assets/img2.jpg" /> </noscript>
+</body>
+</html>

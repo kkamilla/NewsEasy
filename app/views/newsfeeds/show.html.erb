@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Title:</b>
+  <%= @newsfeed.title %>
+</p>
+<p>
+  <b>Link:</b>
+  <%= @newsfeed.link %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @newsfeed.description  %>
+</p>
+
+ <%= render_component :show => 'show' %>
+<%= link_to 'Edit', edit_newsfeed_path(@newsfeed) %> |
+<%= link_to 'Back', newsfeeds_path %>

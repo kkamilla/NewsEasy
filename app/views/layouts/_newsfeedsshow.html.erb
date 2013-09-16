@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News</title>
+  <table>
+  <% @newsfeeds.each do |newsfeed| %>
+      <tr>
+
+    <td><%= newsfeed["title"]%></td>
+    <td><a href='<%= newsfeed["link"] %>'><%= newsfeed["link"] %></a></td>
+    <td><%= newsfeed["description"] %></td>
+    <td><%= link_to 'Follow', newsfeed, method: :follow,data: { confirm: 'Are
+you sure?' }  %></td>
+    <!--<td><#%= link_to 'Edit', edit_newsfeed_path(newsfeed) %></td>
+    <td><#%= link_to 'Destroy', newsfeed, method: :delete, data: { confirm: 'Are
+you sure?' } %></td>  -->
+  </tr>
+  <% end %>
+  </table>
+  <%# flash.each do |name, msg| %>
+      <%#= content_tag :div, msg, :id => "flash_#{name}" %>
+  <%# end %>
+</head>
+<body>
+
+<%#= yield %>
+
+</body>
+</html>

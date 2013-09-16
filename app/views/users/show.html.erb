@@ -1,0 +1,23 @@
+<html>
+<%= provide(:title, @user.name) %>
+<h3>Top News Sites</h3>
+<%#= render "layouts/header" %>
+<%#= render "newsfeeds/follow_form" %>
+<%= render "newsfeeds/follow" %>
+<%#= render "newsfeeds/unfollow" %>
+
+
+    <%# if @user.newsfeeds.any? %>
+       <!-- <h3>newsfeeds (<%#= @user.newsfeeds.count %>)</h3>
+        <ol class="newsfeeds">
+          <%#= render "layouts/newsfeeds" %>
+        </ol>
+        <%#= will_paginate @newsfeeds %>
+    <%# end %>   -->
+  </div>
+</div>
+<%#= link_to 'Edit', edit_user_path(@user) %> |
+<%#= link_to 'Back', users_path %>
+</div>
+</div>
+</html>

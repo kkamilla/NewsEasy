@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  newsfeed_id: MyString
+  user_id: MyString
+
+two:
+  newsfeed_id: MyString
+  user_id: MyString

@@ -1,0 +1,29 @@
+<%= form_for(@newsfeed) do |f| %>
+  <% if @newsfeed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@newsfeed.errors.count, "error") %> prohibited this newsfeed from being saved:</h2>
+
+      <ul>
+      <% @newsfeed.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.number_field :title %>
+  </div>
+    <div class="field">
+      <%= f.label :description %><br />
+      <%= f.number_field :description %>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <%#= render "layouts/header" %>
+  <title>News index</title>
+
+  <table>
+    <% @newsfeeds.each do |newsfeed| %>
+        <!--  <div class="field">
+          <%#= newsfeed["description"]%>
+        </div>   -->
+        <tr>
+
+          <!--<td><%#= newsfeed["title"]%></td>    -->
+          <td><a href='<%= newsfeed["link"] %>'><%= newsfeed["title"] %></a></td>
+
+          <td><%= newsfeed["description"].html_safe %></td>
+          <td><%= link_to 'Follow', newsfeed, method: :follow,data: { confirm: 'Are
+you sure?' }  %></td>
+          <!--<td><iframe src='<%#= render "layouts/descframe" %>'></iframe>
+      <%#= newsfeed["description"] %></td>        -->
+
+
+          <!--<td><#%= link_to 'Edit', edit_newsfeed_path(newsfeed) %></td>
+          <td><#%= link_to 'Destroy', newsfeed, method: :delete, data: { confirm: 'Are
+      you sure?' } %></td>  -->
+        </tr>
+
+    <% end %>
+  </table>
+  <%# flash.each do |name, msg| %>
+  <%#= content_tag :div, msg, :id => "flash_#{name}" %>
+  <%# end %>
+</head>
+<body>
+
+<%#= yield %>
+
+<%=yield %>
+<%= render "layouts/footer" %>
+</body>
+</html>
+
+
+
+
+<!--<h1>Welcome to Connect+ News Stream</h1>
+<br>
+<small><br>The most recent entries:</small><br/>
+
+
+<h1>Listing newsfeeds</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Link</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <ul>
+    <%#= debug @newsfeeds.each.first %>
+  </ul>
+  <%#= @newsfeeds %>
+
+ <!-- <tr>
+      <p><#%= render(json: @newsfeeds )%></p>
+    <td><#%= newsfeed.title%></td>
+    <td><#%= newsfeed.link %></td>
+    <td><#%= newsfeed.description %></td>
+    <td><#%= link_to 'Show', newsfeed %></td>
+    <td><#%= link_to 'Edit', edit_newsfeed_path(newsfeed) %></td>
+    <td><#%= link_to 'Destroy', newsfeed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+
+</table>
+
+<br />
+
+<%#= link_to 'New Newsfeed', new_newsfeed_path %>
